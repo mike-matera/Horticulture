@@ -9544,11 +9544,11 @@ With round pins</description>
 <instance part="SUPPLY7" gate="G$1" x="200.66" y="137.16"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
-<instance part="J1" gate="G$1" x="66.04" y="-17.78"/>
-<instance part="SUPPLY4" gate="G$1" x="88.9" y="-10.16"/>
+<instance part="J1" gate="G$1" x="129.54" y="160.02"/>
+<instance part="SUPPLY4" gate="G$1" x="152.4" y="167.64"/>
 <instance part="GND1" gate="1" x="15.24" y="142.24"/>
 <instance part="GND2" gate="1" x="60.96" y="91.44"/>
-<instance part="GND3" gate="1" x="88.9" y="-27.94"/>
+<instance part="GND3" gate="1" x="152.4" y="149.86"/>
 <instance part="GND4" gate="1" x="129.54" y="43.18"/>
 <instance part="GND5" gate="1" x="236.22" y="78.74"/>
 <instance part="JP1" gate="G$1" x="170.18" y="116.84"/>
@@ -9590,9 +9590,9 @@ With round pins</description>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="-15.24" x2="88.9" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="162.56" x2="152.4" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="5V"/>
-<wire x1="88.9" y1="-10.16" x2="88.9" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="167.64" x2="152.4" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY5" gate="G$1" pin="5V"/>
@@ -9653,8 +9653,8 @@ With round pins</description>
 <net name="SCK" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="58.42" y1="-17.78" x2="40.64" y2="-17.78" width="0.1524" layer="91"/>
-<label x="43.18" y="-17.78" size="1.778" layer="95"/>
+<wire x1="121.92" y1="160.02" x2="93.98" y2="160.02" width="0.1524" layer="91"/>
+<label x="96.52" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -9665,22 +9665,8 @@ With round pins</description>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="5"/>
-<wire x1="58.42" y1="-20.32" x2="40.64" y2="-20.32" width="0.1524" layer="91"/>
-<label x="43.18" y="-20.32" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="MISO" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="-15.24" x2="40.64" y2="-15.24" width="0.1524" layer="91"/>
-<label x="43.18" y="-15.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="MOSI" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="76.2" y1="-17.78" x2="93.98" y2="-17.78" width="0.1524" layer="91"/>
-<label x="86.36" y="-17.78" size="1.778" layer="95"/>
+<wire x1="121.92" y1="157.48" x2="93.98" y2="157.48" width="0.1524" layer="91"/>
+<label x="96.52" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -9712,8 +9698,8 @@ With round pins</description>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="6"/>
-<wire x1="76.2" y1="-20.32" x2="88.9" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="-20.32" x2="88.9" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="157.48" x2="152.4" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="157.48" x2="152.4" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -9815,6 +9801,11 @@ With round pins</description>
 <pinref part="U1" gate="G$1" pin="B1"/>
 <wire x1="144.78" y1="76.2" x2="149.86" y2="76.2" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="139.7" y1="160.02" x2="167.64" y2="160.02" width="0.1524" layer="91"/>
+<label x="149.86" y="160.02" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MISO/TINY_TX" class="0">
 <segment>
@@ -9825,6 +9816,11 @@ With round pins</description>
 <wire x1="139.7" y1="109.22" x2="139.7" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="B2"/>
 <wire x1="139.7" y1="73.66" x2="149.86" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="121.92" y1="162.56" x2="93.98" y2="162.56" width="0.1524" layer="91"/>
+<label x="96.52" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TINY_DTR" class="0">
