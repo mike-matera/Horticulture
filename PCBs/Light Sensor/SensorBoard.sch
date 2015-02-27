@@ -8278,7 +8278,7 @@ SMT header is CONN-09042.</description>
 <class number="0" name="default" width="0.1524" drill="0.3302">
 <clearance class="0" value="0.1524"/>
 </class>
-<class number="1" name="power" width="0.3048" drill="0.3302">
+<class number="1" name="power" width="0.1524" drill="0.3302">
 <clearance class="1" value="0.1524"/>
 </class>
 </classes>
@@ -8343,10 +8343,12 @@ SMT header is CONN-09042.</description>
 <part name="R5" library="rcl" deviceset="R-US_" device="R1210" value="1k"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="VCC" device=""/>
-<part name="SUPPLY7" library="supply2" deviceset="VCC" device=""/>
-<part name="SUPPLY9" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="VCC" device=""/>
+<part name="SUPPLY7" library="supply2" deviceset="VCC" device=""/>
+<part name="SUPPLY9" library="supply2" deviceset="VCC" device=""/>
+<part name="R2" library="rcl" deviceset="R-US_" device="R1210" value="1k"/>
+<part name="SUPPLY18" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8421,10 +8423,12 @@ SMT header is CONN-09042.</description>
 <instance part="R5" gate="G$1" x="170.18" y="106.68" rot="R90"/>
 <instance part="GND6" gate="1" x="220.98" y="45.72"/>
 <instance part="SUPPLY8" gate="G$1" x="99.06" y="170.18"/>
-<instance part="SUPPLY7" gate="G$1" x="25.4" y="38.1"/>
-<instance part="SUPPLY9" gate="G$1" x="200.66" y="55.88" rot="R90"/>
 <instance part="SUPPLY11" gate="G$1" x="83.82" y="167.64"/>
 <instance part="SUPPLY17" gate="G$1" x="7.62" y="132.08"/>
+<instance part="SUPPLY7" gate="G$1" x="25.4" y="38.1"/>
+<instance part="SUPPLY9" gate="G$1" x="198.12" y="55.88" rot="R90"/>
+<instance part="R2" gate="G$1" x="63.5" y="129.54" rot="R90"/>
+<instance part="SUPPLY18" gate="G$1" x="63.5" y="137.16"/>
 </instances>
 <busses>
 </busses>
@@ -8503,6 +8507,11 @@ SMT header is CONN-09042.</description>
 <wire x1="83.82" y1="167.64" x2="83.82" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="162.56" x2="86.36" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="SUPPLY18" gate="G$1" pin="5V"/>
+<wire x1="63.5" y1="134.62" x2="63.5" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="1">
@@ -8909,9 +8918,11 @@ SMT header is CONN-09042.</description>
 <segment>
 <pinref part="U2" gate="G$1" pin="EN"/>
 <wire x1="50.8" y1="162.56" x2="48.26" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="162.56" x2="48.26" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="139.7" x2="63.5" y2="139.7" width="0.1524" layer="91"/>
-<label x="50.8" y="139.7" size="1.778" layer="95"/>
+<wire x1="48.26" y1="162.56" x2="48.26" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="121.92" x2="63.5" y2="121.92" width="0.1524" layer="91"/>
+<label x="48.26" y="119.38" size="1.778" layer="95"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="121.92" x2="63.5" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -8942,17 +8953,6 @@ SMT header is CONN-09042.</description>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="TINY" gate="G$1" pin="VCC"/>
-<wire x1="27.94" y1="25.4" x2="25.4" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="25.4" x2="25.4" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="XBEE" gate="G$1" pin="VCC"/>
-<wire x1="203.2" y1="55.88" x2="223.52" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="SUPPLY9" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY8" gate="G$1" pin="VCC"/>
 <wire x1="96.52" y1="162.56" x2="99.06" y2="162.56" width="0.1524" layer="91"/>
@@ -8967,6 +8967,17 @@ SMT header is CONN-09042.</description>
 <pinref part="SUPPLY17" gate="G$1" pin="VCC"/>
 <wire x1="7.62" y1="121.92" x2="7.62" y2="129.54" width="0.1524" layer="91"/>
 <junction x="7.62" y="121.92"/>
+</segment>
+<segment>
+<pinref part="TINY" gate="G$1" pin="VCC"/>
+<pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
+<wire x1="27.94" y1="25.4" x2="25.4" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="25.4" x2="25.4" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY9" gate="G$1" pin="VCC"/>
+<pinref part="XBEE" gate="G$1" pin="VCC"/>
+<wire x1="200.66" y1="55.88" x2="223.52" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AUX_ANALOG" class="1">
