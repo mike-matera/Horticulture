@@ -8249,7 +8249,7 @@ SMT header is CONN-09042.</description>
 <part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="1210" value="0.1uf"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="R1210" value="1k"/>
 <part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="R5" library="rcl" deviceset="R-US_" device="R1210" value="1k"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="R1210" value="100k"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="R1210" value="1k"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="VCC" device=""/>
@@ -8257,7 +8257,7 @@ SMT header is CONN-09042.</description>
 <part name="SUPPLY17" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="VCC" device=""/>
-<part name="R1" library="rcl" deviceset="R-US_" device="R1210" value="1k"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="R1210" value="100k"/>
 <part name="SUPPLY18" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="U$3" library="MyLibrary" deviceset="SN74LVC1T45" device=""/>
 <part name="U$4" library="MyLibrary" deviceset="SN74LVC1T45" device=""/>
